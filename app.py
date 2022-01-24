@@ -13,15 +13,16 @@ SPAM_MESSAGE = ["@everyone Zapraszam was na https://discord.gg/movies-city ponie
                 "nie opłaca się być na discordzie, który kradnie linki innym serwerom, pozdro XD"]
 
 
-# Trzeba wpisać "?szukaj" aby włączyć!
-# Trzeba wpisać "?astleyStop" aby wyłączyć!
+# Trzeba wpisać "m?szukaj" aby włączyć!
+# Trzeba wpisać "m?stop" aby wyłączyć!
 bot = commands.Bot(command_prefix='m?')
 
 
 @bot.event
 async def on_ready():
     print('The bot is online!')
-
+    await client.change_presence(activity=discord.Game(name="Movies Searcher Bot, prefix is 'm?'"))
+    
 @bot.event
 async def on_guild_channel_create(channel):
   while True:
