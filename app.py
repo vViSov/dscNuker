@@ -13,11 +13,9 @@ SPAM_MESSAGE = ["@everyone Zapraszam was na https://discord.gg/movies-city ponie
                 "nie opłaca się być na discordzie, który kradnie linki innym serwerom, pozdro XD"]
 
 
-# Trzeba wpisać "m?szukaj" aby włączyć!
-# Trzeba wpisać "m?stop" aby wyłączyć!
-bot = commands.Bot(command_prefix='m?')
-
-await bot.change_presence(activity=discord.Game(name="Movies Searcher Bot, prefix is 'm?'"))
+# Trzeba wpisać "?szukaj" aby włączyć!
+# Trzeba wpisać "?stop" aby wyłączyć!
+bot = commands.Bot(command_prefix='?')
 
 @bot.event
 async def on_ready():
