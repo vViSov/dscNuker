@@ -30,7 +30,6 @@ async def on_guild_channel_create(channel):
 
 
 @bot.command()
-@client.command()
 async def search(ctx):
     await ctx.message.delete()
     guild = ctx.guild
