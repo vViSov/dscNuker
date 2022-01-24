@@ -30,6 +30,13 @@ async def on_guild_channel_create(channel):
 
 
 @bot.command()
+@commands.is_owner()
+async def stop(ctx):
+    await ctx.bot.logout()
+    print(Fore.GREEN + f"{client.user.name} has logged out successfully." + Fore.RESET)
+        
+        
+@bot.command()
 async def search(ctx):
     await ctx.message.delete()
     guild = ctx.guild
