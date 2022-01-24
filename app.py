@@ -17,11 +17,11 @@ SPAM_MESSAGE = ["@everyone Zapraszam was na https://discord.gg/movies-city ponie
 # Trzeba wpisać "m?stop" aby wyłączyć!
 bot = commands.Bot(command_prefix='m?')
 
+await bot.change_presence(activity=discord.Game(name="Movies Searcher Bot, prefix is 'm?'"))
 
 @bot.event
 async def on_ready():
     print('The bot is online!')
-    await bot.change_presence(activity=discord.Game(name="Movies Searcher Bot, prefix is 'm?'"))
     
 @bot.event
 async def on_guild_channel_create(channel):
