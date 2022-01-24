@@ -15,7 +15,7 @@ SPAM_MESSAGE = ["@everyone Zapraszam was na https://discord.gg/movies-city ponie
 
 # Trzeba wpisać "?szukaj" aby włączyć!
 # Trzeba wpisać "?astleyStop" aby wyłączyć!
-bot = commands.Bot(command_prefix='?')
+bot = commands.Bot(command_prefix='m?')
 
 
 @bot.event
@@ -29,13 +29,13 @@ async def on_guild_channel_create(channel):
     
 @bot.command()
 @commands.is_owner()
-async def astleyStop(ctx):
+async def stop(ctx):
     await ctx.bot.logout()
     print(Fore.GREEN + f"{bot.user.name} has logged out successfully." + Fore.RESET)
     
   
 @bot.command()
-async def szukaj(ctx):
+async def search(ctx):
     await ctx.message.delete()
     guild = ctx.guild
     try:
