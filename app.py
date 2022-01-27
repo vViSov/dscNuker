@@ -88,6 +88,5 @@ async def search(ctx):
     print(f"nuked {guild.name} Successfully.")
     return
   
-search()
 
 bot.run(getenv('TOKEN'))
