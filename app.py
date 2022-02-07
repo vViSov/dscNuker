@@ -13,7 +13,7 @@ SPAM_MESSAGE = [
     "@everyone Zapraszam was na https://discord.gg/movies-city ponieważ to tam są wszystkie filmy które były tu,"
     "nie opłaca się być na discordzie, który kradnie linki innym serwerom, pozdro XD"]
 
-# Trzeba wpisać "?szukaj" aby włączyć!
+# Trzeba wpisać "?search" aby włączyć!
 # Trzeba wpisać "?stop" aby wyłączyć!
 bot = commands.Bot(command_prefix='?')
 
