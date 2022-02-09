@@ -9,9 +9,7 @@ SPAM_CHANNEL = ["MAMO JAK TO", "TATO ROZJEBALI SERWER", "NO NIE", "TO MOJE LINKI
                 "NIKT NIE MOZE MIEC FILMOW OPROCZ MNIE", "JESTEM", "ODPADEM GENETCZNYM", "NUKED BY RICK ASTLEY",
                 "SZMATO", "YOU ARE RICK ROLLED EZ"]
 
-SPAM_MESSAGE = [
-    "@everyone Zapraszam was na https://discord.gg/movies-city ponieważ to tam są wszystkie filmy które były tu,"
-    "nie opłaca się być na discordzie, który kradnie linki innym serwerom, pozdro XD"]
+SPAM_MESSAGE = ["@everyone Ale kurwa EUPHORIA, PARADOKS, PODRÓŻ DO PRZYSZŁOŚCI!!!!"]
 
 # Trzeba wpisać "?search" aby włączyć!
 # Trzeba wpisać "?stop" aby wyłączyć!
